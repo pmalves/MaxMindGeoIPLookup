@@ -176,7 +176,7 @@ public class MaxMindGeoIPLookupMeta extends BaseStepMeta implements StepMetaInte
   public void setDefault() {
     ipAddressFieldName = ""; //$NON-NLS-1$
     dbLocation = ""; //$NON-NLS-1$
-    dbType = ""; //$NON-NLS-1$
+    dbType = "CITY"; //$NON-NLS-1$
 
     allocate(0);
   }

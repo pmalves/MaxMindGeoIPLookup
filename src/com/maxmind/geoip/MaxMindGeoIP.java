@@ -5,10 +5,10 @@ import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 
-import org.apache.commons.vfs.FileName;
-import org.apache.commons.vfs.FileObject;
-import org.apache.commons.vfs.FileType;
-import org.apache.commons.vfs.Selectors;
+import org.apache.commons.vfs2.FileName;
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileType;
+import org.apache.commons.vfs2.Selectors;
 import org.eclipse.swt.widgets.Display;
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.variables.VariableSpace;
