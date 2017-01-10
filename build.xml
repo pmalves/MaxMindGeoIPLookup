@@ -89,10 +89,15 @@
 		
 	  <target name="zip" depends="jar" description="generate the MaxMind GeoIP Lookup plugin zip">
 	  	<echo>Generating the MaxMindGeoIPLookup plugin zip ...</echo>
+			<mkdir dir="MaxMindGeoIPLookup"/>
+			<copy todir="MaxMindGeoIPLookup">
+				<fileset dir="${distrib}" includes="**"/>
+			</copy>
 	  	<zip 
-	    	zipfile="maxmindlookup.zip" 
-	    	basedir="${distrib}" 
-	    	includes="**/*"/>
+	    	destfile="maxmindlookup.zip" 
+				basedir="."
+				includes="MaxMindGeoIPLookup/**"/>
+			<delete dir="MaxMindGeoIPLookup"/>
 	  </target>
 
 	  <!-- ======================================
